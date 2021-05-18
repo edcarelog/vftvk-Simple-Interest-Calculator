@@ -6,6 +6,7 @@ console.log("My code ia runnning");
 function compute()
 {
     var principal = document.getElementById("principal").value;
+    var focus = document.getElementById("principal").focus();
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var interest = principal*years*(rate /100);
@@ -13,24 +14,24 @@ function compute()
     
     //create references to the input elements we wish to validate
     //Check if princippal field is empty
-    if(principal.value == ""){
+    if(principal == ""){
         alert("Please enter the principal");
-        principal.focus();
+        focus
         return false;
     }
     //Check if princippal field is zero or negative
-    if(principal.value <=0){
+    if(principal <=0){
+        console.log("comwes hwew")
         alert("Please enter positive number");
-        principal.focus();
+        focus
         return false;  
     }
    //Check if rate field is empty
-    if(rate.value == ""){
+    if(rate == ""){
         alert("Please enter the rate");
-        rate.focus();
+        focus
         return false;
     } 
-    
     alert("Field validation is correct");
     
     
