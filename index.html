@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<div>
+
+<div id=cell>
+    <div class=caption>
+
+    <head>
+        <title>Simple Interest Calculator</title>
+        <script src="./script/script.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>   
+    <body>
+        <div class="maindiv">
+            <div class="ht"><h1>Simple Interest Calculator</h1> </div>
+            
+            <div class="content">
+                <cellspacing="100" cellpadding="100">
+                    <table>
+                            <tr>  
+                            <td class="first"><h3>Amount</h3></td>
+                            <td style="padding: left 10px" class="first">             
+                                <input type="number" id="principal" value="0"> </td>   
+                            </tr>               
+                            <tr>
+                                <td class="second"><h3>Interest rate</h3></td>
+                                <td style="padding-left:10px" class="second">                   
+                                <input type="range" onchange="updateRate()" id="rate" name="rate" min="0" max="20" step="0.25" value="10.25"> 
+                                <span id="rate_val" >10.25%</span> </td>  
+                            </tr>  
+                            <tr>
+                                <td class="third"><h3>No. of Years</h3></td>
+                                <td style="padding-left:10px" class="third">
+                                    <select name="sss" id="years">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>               
+            
+                                </td>  
+                            </tr>
+                        </td>
+        
+                    </table> 
+        
+                    <button onclick="compute()">Compute Interest</button>
+                    </br>
+                
+                    <p id=result></p>
+            </div>            
+           
+            <footer> 
+                <div class="footdiv">
+                    <footer>&#169; Everyone Can Get Rich </footer><footer>&#169; This Calculator belongs to Edi </footer> 
+                   
+                </div>
+                      
+            </footer>
+
+        </div>
+        
+    </body>    
+
+</div>
+</div>
+   
+</div> 
+    
+</html>
+

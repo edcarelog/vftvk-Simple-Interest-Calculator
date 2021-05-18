@@ -1,0 +1,67 @@
+
+.maindiv{
+    background-color:white;
+    font-family:black;
+    border-radius: 25px;
+    text-align: left;
+    padding: left 20px; 
+    padding: right 20px; 
+    padding: bottom 20px;
+    padding: top 20px; 
+    width: 600px;
+    height: 400px;
+	  margin: 0 auto;    
+}
+    
+.compute{
+    color: red   
+}
+
+  
+  #cell {
+    height: 450px;
+    padding-top: 50px;
+    padding-left: 90px;
+    display: flex;
+    justify-content:center;
+      
+  }
+  
+  #cell .caption {
+    border: 5px solid #0e0e0d;
+    border-radius:25px;
+    padding: 0px;
+    
+  }
+  
+  #cell .caption img {
+    border: 3px solid #cecece;
+  } 
+
+  .content {
+    padding-left: 120px;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+
+  .body {
+    background-color: black;
+    font-family: Arial;
+    color:white;
+  }
+  
+  .ht {
+    color:grey;
+    font-family: Verdana;
+    padding-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    text-align: center;
+  } 
+
+
+  .footdiv {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
